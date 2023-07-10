@@ -1,0 +1,38 @@
+.parametrs {
+  width: min-content;
+}
+.parametrsTable td {
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+
+  background-color: var(--primary-bg-color);
+}
+.parametrsTable tr td:last-child {
+  border-right: none;
+}
+.parametrsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.parametrsTable tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+.parametrsTable tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+.parametrsTable tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.parametrsTable tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+.parametrs__controls {
+  padding: 20px 5px 0 5px;
+}
+
+.parametrs__calculateButton {
+  width: 121px;
+  height: 40px;
+
+  font-size: inherit;
+}

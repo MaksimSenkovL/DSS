@@ -1,0 +1,35 @@
+:root {
+    /* #region Background */
+    --primary-bg-color: #f6f8fa;
+    --secondary-bg-color: #e5e7e8;
+    --secondary-bg-color-with-opaticty: rgba(229, 231, 232, 0.5);
+    /* #endregion Background */
+
+    /* #region Border */
+    --border-color: #d0d7de;
+    /* #endregion Border */
+
+    /* #region tableInput */
+    --select--color: #0969da;
+    --invalid--color: #e34c26;
+    --valid--color: #2da44e;
+    /* #endregion tableInput */
+
+    /* #region Buttons Color */
+    --button-text-color: #ffffff;
+
+    --button-green: #2da44e;
+    --button-green-with-opacity: rgba(45, 164, 78, 0.9);
+
+    --button-red: #e34c26;
+    --button-red-with-opacity: rgba(227, 76, 38, 0.9);
+
+    --button-yellow: #f1e05a;
+    --button-gray: rgba(101, 109, 118, 0.75);
+    /* #endregion Buttons Color*/
+
+    /* #region ListColors */
+
+    --listElement-select: #e5e7e8;
+    /* #endregion ListColors */
+}

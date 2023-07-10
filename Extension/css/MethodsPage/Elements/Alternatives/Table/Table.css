@@ -1,0 +1,36 @@
+.alternatives__table {
+    height: 340px;
+    min-width: 600px;
+
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+
+    /* Style for Firefox scrollbar */
+    scrollbar-color: var(--border-color) var(--primary-bg-color);
+    scrollbar-width: thin;
+
+    border-radius: 10px;
+    /* background-color: red; */
+}
+
+/* Style for Webkit scrollbar */
+/* #region */
+.alternatives__table::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: var(--primary-bg-color);
+}
+.alternatives__table::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+}
+
+.alternativesTable {
+    position: relative;
+}
+.alternativesTable > thead {
+    position: -webkit-sticky;
+    position: sticky;
+
+    top: 0;
+    z-index: 1;
+}

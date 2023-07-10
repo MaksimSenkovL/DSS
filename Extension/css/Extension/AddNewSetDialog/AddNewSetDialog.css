@@ -1,0 +1,46 @@
+/* #region Dialog */
+.newSetDialog {
+    top: 50%;
+    left: 50%;
+    width: 80%;
+
+    translate: -50% -50%;
+
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+.newSetDialog__input {
+    padding: 3px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+.wrapperDialog {
+}
+.dialogControls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.createSetButton {
+    width: 50px;
+}
+.createSet {
+    padding: 3px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+
+    color: var(--button-text-color);
+    background-color: var(--button-green);
+}
+.cancelSet {
+    padding: 3px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+
+    color: var(--button-text-color);
+    background-color: var(--button-red);
+}
+
+/* #endregion Dialog */

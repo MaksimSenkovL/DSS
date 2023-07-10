@@ -1,0 +1,24 @@
+.customButton {
+    padding: 3px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+.customButton_green {
+    color: var(--button-text-color);
+    background-color: var(--button-green);
+}
+.customButton_green:hover {
+    transition: background-color 0.15s ease-out;
+    background-color: var(--button-green-with-opacity);
+}
+
+.customButton_red {
+    color: var(--button-text-color);
+    background-color: var(--button-red);
+}
+.customButton_red:hover {
+    transition: background-color 0.15s ease-out;
+    background-color: var(--button-red-with-opacity);
+}

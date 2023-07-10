@@ -1,0 +1,18 @@
+.extension {
+    width: 350px;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 70px;
+
+    /* background-color: var(--primary-bg-color); */
+    background-color: #fff;
+}
+
+.extensionBody {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}

@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "SM",
+    "description": "Additonal Page",
+    "version": "5.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "hello_ex.png"
+    },
+    "permissions": ["tabs", "storage"],
+    "options_page": "test.html"
+}

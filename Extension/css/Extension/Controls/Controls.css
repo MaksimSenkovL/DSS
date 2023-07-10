@@ -1,0 +1,17 @@
+/* #region Controls */
+.controls {
+    display: flex;
+
+    gap: 10px;
+    padding: 10px;
+}
+.button-w-50 {
+    width: 50px;
+}
+.button-pad-10 {
+    padding: 0 10px;
+}
+.flex-end {
+    justify-self: flex-end;
+}
+/* #endregion Controls */

@@ -1,0 +1,21 @@
+.setPicker {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 110px 100px 100px;
+    grid-template-rows: 1fr;
+
+    padding: 10px;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.selectRepository {
+    border: 1px solid var(--border-color);
+    padding: 5px;
+
+    border-radius: 3px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

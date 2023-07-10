@@ -1,0 +1,83 @@
+/* #region List */
+.repositoryList {
+    height: 300px;
+
+    padding: 10px;
+    overflow: auto;
+
+    border-bottom: 1px solid var(--border-color);
+
+    /* Style for Firefox scrollbar */
+    scrollbar-color: var(--border-color) var(--primary-bg-color);
+    scrollbar-width: thin;
+}
+
+/* Style for Webkit scrollbar */
+/* #region */
+.repositoryList::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: var(--primary-bg-color);
+}
+.repositoryList::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+}
+/* #endregion*/
+.repository {
+    height: 40px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 1fr;
+    margin-bottom: 10px;
+
+    /* border-radius: 5px; */
+
+    box-shadow: 0px 1px 0px 0px var(--border-color);
+}
+.repository:last-child {
+    margin-bottom: unset;
+}
+.repository:hover {
+    transition: background-color 0.15s ease-out;
+
+    background-color: var(--primary-bg-color);
+
+    border-radius: 5px;
+    box-shadow: none;
+    outline: 1px solid var(--border-color);
+}
+.repository:hover .deleteRepositoryButton {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.15s ease-out;
+}
+
+.repositoryLabel {
+    display: flex;
+
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+
+    color: black;
+}
+
+.deleteRepositoryButton {
+    display: none;
+    opacity: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+
+    background-color: transparent;
+
+    align-self: center;
+    justify-self: center;
+}
+
+/* #endregion List */

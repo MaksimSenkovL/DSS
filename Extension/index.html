@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/Extension/Extension.css" />
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="extension" class="extension">
+            <div class="extensionBody">
+                <div class="setPicker">
+                    <select id="selectRepository" class="selectRepository"></select>
+                    <button id="addNewSetButton" class="customButton customButton_green">Add new set</button>
+                    <button id="deleteSetButton" class="customButton customButton_red">Remove set</button>
+                </div>
+                <ul id="repositoryList" class="repositoryList"></ul>
+            </div>
+            <div class="controls">
+                <button id="addButton" class="customButton customButton_green button-pad-10">Add</button>
+                <button id="saveButton" class="customButton customButton_green button-pad-10">Save</button>
+                <button id="nextButton" class="customButton customButton_green button-pad-10">Go to methods</button>
+            </div>
+            <dialog id="newSetDialog" class="newSetDialog">
+                <div class="wrapperDialog">
+                    <label
+                        >Label:
+                        <input data-label required class="newSetDialog__input" type="text" placeholder="Label..."
+                    /></label>
+                    <div class="dialogControls">
+                        <button data-create class="createSet">Create</button>
+                        <button data-cancel class="cancelSet">Cancel</button>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+        <!-- <script src="/extension.js"></script> -->
+        <script type="module" src="/app/main.js"></script>
+    </body>
+</html>
