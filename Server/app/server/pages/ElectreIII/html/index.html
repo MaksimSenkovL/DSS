@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/ElectreIII/css/MethodsPage/MethodsPage.css" />
+
+        <title>Methods</title>
+    </head>
+    <style>
+        a {
+            color: black;
+        }
+    </style>
+    <body>
+        <div class="wrapper" id="methodPage">
+            <header class="methodsPage__header">
+                <nav class="navigation">
+                    <ul class="navigation__list navList">
+                        <li class="navList__element"><a href="../../ElectreI/html/index.html">Electre I</a></li>
+                        <li class="navList__element"><a href="../../ElectreIII/html/index.html">Electre III</a></li>
+                        <li class="navList__element"><a href="../../AddConv/html/index.html">Add. Conv.</a></li>
+                        <li class="navList__element"><a href="../../ImplConv/html/index.html">Impl.Conv.</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="methodsPage__main">
+                <div class="inputSide">
+                    <div class="alternatives">
+                        <div class="alternatives__table">
+                            <table id="alternativesTable" class="customTable alternativesTable">
+                                <thead>
+                                    <tr>
+                                        <th
+                                            class="customTable__element customTable__th customTable__LabelColumn"
+                                            data-columnLabel="label"
+                                        >
+                                            <select
+                                                name=""
+                                                id="selectSet"
+                                                class="customTable__input customTable__select"
+                                            ></select>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="repositoryTableBody"></tbody>
+                            </table>
+                            <!-- <div
+                                id="addNewColumnToAlternativesTableButton"
+                                class="alternativesTable__addColumnButtonWrapper"
+                            >
+                                <button class="alternativesTable__addColumnButton">+</button>
+                            </div> -->
+                        </div>
+                        <div
+                            id="addNewColumnToAlternativesTableButton"
+                            class="alternativesTable__addColumnButtonWrapper"
+                        >
+                            <button class="alternativesTable__addColumnButton">+</button>
+                        </div>
+
+                        <div class="alternatives__controls alternativesControls">
+                            <button
+                                id="saveSetsButton"
+                                class="customButton customButton_green customButton_h40 customButton_padRL12 customButton_fzInherit"
+                            >
+                                Save set
+                            </button>
+                            <button
+                                id="addNewSetButton"
+                                class="customButton customButton_green customButton_h40 customButton_padRL12 customButton_fzInherit"
+                            >
+                                New set
+                            </button>
+                            <button
+                                id="deleteSetButton"
+                                class="customButton customButton_green customButton_h40 customButton_padRL12 customButton_fzInherit"
+                            >
+                                Delete set
+                            </button>
+                        </div>
+
+                        <form
+                            id="addNewAlternative"
+                            class="alternatives__addNewAlternative addNewAlternative"
+                            autocomplete="off"
+                        >
+                            <table class="customTable customTable_noBorder addNewTable">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="customTable__element customTable__element_w132">
+                                            <input
+                                                type="text"
+                                                class="customTable__input"
+                                                name="label"
+                                                required
+                                                placeholder="Label"
+                                            />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="addNewAlternative__controls">
+                                <button
+                                    type="submit"
+                                    class="addNewAlternative__addNewButton customButton customButton_green"
+                                >
+                                    Add
+                                </button>
+                                <label
+                                    >Link (opcional) <input class="addLink" type="url" name="href" placeholder="url"
+                                /></label>
+                            </div>
+                        </form>
+
+                        <dialog id="newColumnDialog" class="newParametrDialog">
+                            <div class="wrapperNewParametrDialog">
+                                <div>
+                                    <label
+                                        >Label:
+                                        <input
+                                            data-label
+                                            required
+                                            class="newParametrDialog__input"
+                                            type="text"
+                                            placeholder="Label..."
+                                    /></label>
+                                </div>
+
+                                <div class="newParametrDialog__dialogControls">
+                                    <button data-create class="newParametrDialog__createSet">Create</button>
+                                    <button data-cancel class="newParametrDialog__cancelSet">Cancel</button>
+                                </div>
+                            </div>
+                        </dialog>
+
+                        <dialog id="newSetDialog" class="newSetDialog">
+                            <div class="wrapperNewSetDialog">
+                                <div>
+                                    <label
+                                        >Label:
+                                        <input
+                                            data-label
+                                            required
+                                            class="newSetDialog__input"
+                                            type="text"
+                                            placeholder="Label..."
+                                    /></label>
+                                </div>
+
+                                <div class="newSetDialog__dialogControls">
+                                    <button data-create class="newSetDialog__createSet">Create</button>
+                                    <button data-cancel class="newSetDialog__cancelSet">Cancel</button>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+
+                    <h2 class="parametrsLabel">Parameters for: <span>Electre III</span></h2>
+                    <form class="parametrs">
+                        <table id="parametrsTable" class="customTable parametrsTable">
+                            <thead></thead>
+                            <tbody>
+                                <tr data-parametersRow>
+                                    <td class="customTable__element customTable__element_w132">
+                                        <p class="customTable_p" data-rowLabel="importance">Показатель важности</p>
+                                    </td>
+                                </tr>
+                                <tr data-parametersRow>
+                                    <td class="customTable__element customTable__element_w132">
+                                        <p class="customTable_p" data-rowLabel="indifference">Порог безразличия</p>
+                                    </td>
+                                </tr>
+                                <tr data-parametersRow>
+                                    <td class="customTable__element customTable__element_w132">
+                                        <p class="customTable_p" data-rowLabel="superiority">Порог превосходства</p>
+                                    </td>
+                                </tr>
+                                <tr data-parametersRow>
+                                    <td class="customTable__element customTable__element_w132">
+                                        <p class="customTable_p" data-rowLabel="veto">Порог вето</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="customTable__element customTable__element_w132">
+                                        <p class="customTable_p" data-rowLabel="treshold">TH for Asc</p>
+                                    </td>
+                                    <td class="customTable__element">
+                                        <input
+                                            type="number"
+                                            class="customTable__input customTable__element_w117"
+                                            min="0"
+                                            value="0"
+                                            step="0.01"
+                                            data-columnLabel="tresholdAsc"
+                                            required
+                                        />
+                                    </td>
+                                    <td class="customTable__element">
+                                        <p class="customTable_p" data-rowLabel="trash1">TH for Desc</p>
+                                    </td>
+                                    <td class="customTable__element">
+                                        <input
+                                            type="number"
+                                            class="customTable__input customTable__element_w117"
+                                            min="0"
+                                            value="0"
+                                            step="0.01"
+                                            data-columnLabel="tresholdDesc"
+                                            required
+                                        />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+
+                    <div class="parametrs__controls">
+                        <button id="calculateButton" class="parametrs__calculateButton customButton customButton_green">
+                            Calculate
+                        </button>
+                    </div>
+                </div>
+                <div class="outputSide">
+                    <div id="output" class="outputSide__output customOutput"></div>
+                </div>
+            </main>
+        </div>
+        <script type="module" src="/ElectreIII/js/app/main.js"></script>
+    </body>
+</html>

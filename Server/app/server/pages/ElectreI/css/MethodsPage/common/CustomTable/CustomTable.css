@@ -1,0 +1,140 @@
+.customTable {
+    min-width: 600px;
+    max-width: 840px;
+
+    /* table-layout: fixed; */
+    /* width: 600px; */
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+
+    /* font-size: 20px; */
+}
+.customTable_noBorder {
+    border: none;
+}
+
+.customTable__th {
+    position: relative;
+    text-align: center;
+
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    background-color: var(--primary-bg-color);
+}
+.customTable__th:hover .customTable__deleteColumnButtonWrapper {
+    display: flex;
+}
+.customTable__th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+.customTable__th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.customTable__LabelColumn {
+    width: 132px;
+}
+.customTable__th_w75 {
+    width: 75px;
+}
+.customTable__th_w117 {
+    width: 117px;
+}
+.customTable__th_wAuto {
+    /* width: auto; */
+}
+
+.customTable__element {
+    padding: 5px;
+}
+.customTable__element_w117 {
+    width: 117px;
+}
+.customTable__element_w132 {
+    width: 132px;
+}
+
+/* #region DeleteColumn */
+.customTable__deleteColumnButtonWrapper {
+    display: none;
+
+    position: absolute;
+    /* top: -36px;
+    left: -1px;
+    right: -1px; */
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    /* height: 35px; */
+
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    /* border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+
+    background-color: var(--primary-bg-color);
+}
+.customTable__deleteColumnButton {
+    font-size: 20px;
+    width: 60%;
+    height: 100%;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: white;
+}
+/* #endregion DeleteColumn */
+
+/* #region Style For Table Input */
+
+.customTable__select {
+    background-color: #fff;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.customTable__input {
+    /* height: 30px; */
+    height: 40px;
+    width: 100%;
+
+    text-align: center;
+    padding: 5px;
+
+    font-size: inherit;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+.customTable__input:focus {
+    border-color: var(--select--color);
+}
+.customTable__input:invalid {
+    border-color: var(--invalid--color);
+}
+/* #endregion Style For Table Input */
+
+.customTable_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}

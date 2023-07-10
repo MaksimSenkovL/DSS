@@ -1,0 +1,91 @@
+@import url("../../css/normalize/normalize.css");
+
+@import url("../../css/MethodsPage/colors/colors.css");
+
+@import url("../../css/MethodsPage/fonts/fonts.css");
+
+@import url("../../css/MethodsPage/common/button/customButton.css");
+@import url("../../css/MethodsPage/common/CustomTable/CustomTable.css");
+
+@import url("../../css/MethodsPage/Elements/Alternatives/Section/Alternatives.css");
+@import url("../../css/MethodsPage/Elements/Alternatives/Table/Table.css");
+@import url("../../css/MethodsPage/Elements/Alternatives/Controls/Controls.css");
+@import url("../../css/MethodsPage/Elements/Alternatives/AddNew/AddNew.css");
+@import url("../../css/MethodsPage//Elements/Alternatives/AddNewParametrDialog/AddNewParametrDialog.css");
+@import url("../../css/MethodsPage//Elements/Alternatives/AddNewSetDialog/AddNewSetDialog.css");
+
+@import url("../../css/MethodsPage/Elements/Parametrs/Header/ParametrsHeader.css");
+@import url("../../css/MethodsPage/Elements/Parametrs/Table/ParametsTable.css");
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+}
+
+.methodsPage__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 60px;
+
+    background-color: var(--header-bg-color);
+}
+
+.navigation {
+    height: 100%;
+}
+.navList {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 20px;
+}
+.navList__element {
+    height: 100%;
+    width: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.methodsPage__main {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+}
+.inputSide {
+    padding: 60px;
+    padding-bottom: 0;
+    border-right: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+.outputSide {
+    padding: 60px;
+    /* border-radius: 10px; */
+}
+.outputSide__output {
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+}
+.customOutput {
+}
+.customOutput__row {
+    display: flex;
+    gap: 10px;
+}

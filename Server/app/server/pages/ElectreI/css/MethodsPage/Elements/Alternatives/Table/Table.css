@@ -1,0 +1,107 @@
+.alternatives__table {
+    position: relative;
+    height: 340px;
+    min-width: 600px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /* Style for Firefox scrollbar */
+    scrollbar-color: var(--border-color) var(--primary-bg-color);
+    scrollbar-width: thin;
+
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    /* background-color: red; */
+}
+
+/* Style for Webkit scrollbar */
+/* #region */
+.alternatives__table::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: var(--primary-bg-color);
+}
+.alternatives__table::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+}
+
+.alternativesTable {
+    /* position: relative; */
+}
+
+.alternativesTable > thead {
+    position: -webkit-sticky;
+    position: sticky;
+
+    top: 0;
+    z-index: 1;
+}
+
+.alternativesTable > thead > tr > th:last-child {
+    border-top-right-radius: 0;
+}
+
+.alternativesTable tr {
+    /* height: 40px; */
+    height: 50px;
+}
+.alternativesTable tr td {
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    background-color: var(--primary-bg-color);
+}
+
+.alternativesTable tr td:last-child {
+    border-right: none;
+}
+
+.alternativesTable tr:last-child > td {
+    border-bottom: none;
+}
+
+.alternativesTable tr:last-child > td:first-child {
+    border-bottom-left-radius: 10px;
+}
+.alternativesTable tr:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+}
+
+.alternativesTable tr:last-child > td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.alternativesTable__addColumnButtonWrapper {
+    position: absolute;
+    top: 0;
+    right: -50px;
+
+    height: 52px;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border-color);
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: var(--primary-bg-color);
+}
+
+.alternativesTable__addColumnButton {
+    height: 50%;
+    width: 50%;
+
+    font-size: 20px;
+    font-weight: 400;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    background-color: white;
+}
